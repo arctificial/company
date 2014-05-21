@@ -1,9 +1,23 @@
 <!doctype html>
-<html>
+<html ng-app="arctificial">
 <head>
-  <title>Arctificial</title>
+  <title></title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 </head>
 <body>
-  <h1>Hello</h1>
+  <div class="wrapper" ng-controller="StaffCtrl">
+    <div class="staff" ng-repeat="staff in data">
+      <h3>{{staff.name}}</h3>
+      <blockquote>{{staff.quote}}</blockquote>
+      <ul>
+        <li><a href="//{{staff.linkedin}}">LinkedIn</a></li>
+        <li><a href="//{{staff.social_account}}">Get in touch</a></li>
+        <li><a href="//{{staff.url}}">Blog/Website</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
