@@ -1,0 +1,27 @@
+{
+  "name": "company",
+  "version": "0.0.0",
+  "description": "Arctificial company website",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "~0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "http-server -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arctificial/company"
+  },
+  "keywords": [
+    "company",
+    "profile"
+  ],
+  "author": "Arctificial",
+  "license": "-",
+  "bugs": {
+    "url": "https://github.com/arctificial/company/issues"
+  },
+  "homepage": "https://github.com/arctificial/company"
+}
